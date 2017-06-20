@@ -3,6 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 
+
 // Sets up the Express App
 // =============================================================
 var app = express();
@@ -15,9 +16,9 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 //Initiates htmlRoutes.js routes
-var htmlRoutes = require('./app/routes/htmlRoutes.js')(app,path);
+var htmlRoutes = require('./app/routing/htmlRoutes.js')(app,path);
 //Initiates apiRoutes.js routes
-var apiRoutes = require('./app/routes/apiRoutes.js')(app,path);
+var apiRoutes = require('./app/routing/apiRoutes.js')(app,path);
 
 //Servers public content such as CSS Javascript required in the HTML files
 app.use(express.static(path.join(__dirname,'app/public')));

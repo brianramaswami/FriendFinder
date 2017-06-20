@@ -1,0 +1,19 @@
+module.exports = {
+    people:[
+        {
+  "name":"Ahmed",
+  "photo":"https://www.takemefishing.org/tmf/assets/images/fish/bigmouth-buffalo-464x170.png",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+}
+]};
